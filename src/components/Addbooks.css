@@ -1,0 +1,23 @@
+.add {
+	width: 500px;
+	height: 400px;
+	background-color: antiquewhite;
+	margin: 50px auto;
+	padding-top: 50px;
+}
+
+.item {
+	width: 80px;
+	height: 20px;
+	margin: 10px;
+	border: none;
+}
+.chose {
+	width: 300px;
+	height: 20px;
+	margin: 10px;
+	border: none;
+}
+.addbtn {
+	margin-left: 50%;
+}

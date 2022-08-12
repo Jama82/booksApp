@@ -1,0 +1,17 @@
+.navbar {
+	background-color: rgb(228, 210, 187);
+	height: 60px;
+}
+.list {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+.list li a {
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: rgb(89, 5, 68);
+}

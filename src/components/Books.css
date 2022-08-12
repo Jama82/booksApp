@@ -1,0 +1,26 @@
+.table {
+	max-width: 1000px;
+	height: 500px;
+	background-color: #fff;
+	margin: 20px auto;
+	text-align: left;
+}
+
+th {
+	padding: 10px 20px;
+}
+tr {
+	width: 500px;
+	/* padding-right: 100px; */
+}
+.header {
+	color: rebeccapurple;
+	display: flex;
+	padding-right: 150px;
+	justify-content: baseline;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
