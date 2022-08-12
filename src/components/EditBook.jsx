@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { getBook, editBook } from "../api/api";
 import "./EditBook.css";
 
@@ -12,7 +12,6 @@ const EditBook = () => {
 	const navigate = useNavigate();
 	const { id } = useParams();
 
-	//hook
 	const [book, setBook] = useState(initialValues);
 
 	useEffect(() => {
@@ -26,7 +25,6 @@ const EditBook = () => {
 	};
 
 	const onValueChange = (e) => {
-		// console.log(e.target.name, e.target.value);
 		setBook({ ...book, [e.target.name]: e.target.value });
 		console.log(book);
 	};
@@ -60,9 +58,11 @@ const EditBook = () => {
 				/>
 			</form>
 			<form>
-				<button className="addbtn" onClick={() => addBookDetails()}>
-					Edit{""}
-				</button>
+				<Link to="/all">
+					<button className="addbtn" onClick={() => addBookDetails()}>
+						Edit
+					</button>
+				</Link>
 			</form>
 		</div>
 	);
